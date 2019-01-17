@@ -33,6 +33,11 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "peerDependencies": {
     "@angular/core": ">=4.1.3"
   },

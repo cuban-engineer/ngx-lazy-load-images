@@ -14,7 +14,7 @@ const inlineResources = require('./inline-resources');
 const relativeCopy = require('./utils').relativeCopy;
 
 // Scaffolding Paths
-const libName = require('../package.json').name;
+const libName = 'ngx-lazy-load-images';
 const rootFolder = path.join(__dirname);
 const compilationFolder = path.join(rootFolder, 'out-tsc');
 const srcFolder = path.join(rootFolder, '../lib');
@@ -122,13 +122,6 @@ return Promise.resolve()
     })
     .then(() => console.log('All bundles generated successfully.'))
   })
-  .then(() => 
-    // Copy package files
-    relativeCopy('LICENSE', rootFolder, distFolder)
-    .then(() => relativeCopy('package.json', rootFolder, distFolder))
-    .then(() => relativeCopy('README.md', rootFolder, distFolder))
-    .then(() => console.log('Package files copy succeeded.'))
-  )
   .catch(err => {
     console.error('\Build failed. See below for errors.\n');
     console.error(err);
