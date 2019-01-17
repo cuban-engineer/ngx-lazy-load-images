@@ -2,7 +2,7 @@
   "name": "ngx-lazy-load-images2",
   "version": "1.0.6",
   "description": "Image lazy load library for Angular 2+.",
-  "main": "./bundles/ngx-lazy-load-images.umd.min.js",
+  "main": "dist/bundles/ngx-lazy-load-images.umd.min.js",
   "typings": "./ngx-lazy-load-images.d.ts",
   "author": "c4rlos",
   "keywords": [
@@ -34,7 +34,7 @@
     "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "files": [
-    "dist/**/*"
+    "dist/"
   ],
   "peerDependencies": {
     "@angular/core": ">=4.1.3"
