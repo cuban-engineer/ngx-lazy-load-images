@@ -34,9 +34,7 @@
     "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "files": [
-    "dist/*",
-    "LICENSE",
-    "README.md"
+    "dist/**/*"
   ],
   "peerDependencies": {
     "@angular/core": ">=4.1.3"
