@@ -34,7 +34,7 @@
     "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "files": [
-    "dist",
+    "dist/*",
     "LICENSE",
     "README.md"
   ],
