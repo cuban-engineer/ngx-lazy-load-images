@@ -1,6 +1,6 @@
 {
   "name": "ngx-lazy-load-images2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Image lazy load library for Angular 2+.",
   "main": "./bundles/ngx-lazy-load-images.umd.min.js",
   "typings": "./ngx-lazy-load-images.d.ts",
